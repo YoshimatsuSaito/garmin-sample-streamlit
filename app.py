@@ -49,6 +49,15 @@ def calc_tmp(df):
     return df
 
 
+# explanation
+st.title("garmin sample app")
+st.markdown("""
+- this app does not have any actual functions
+- this is very basic template that make users upload their .fit data, convert it to dataframe, process and show data, convert the dataframe to csv file, and download the file
+- this app can process only sample data stored in [this directory](https://github.com/YoshimatsuSaito/garmin-sample-streamlit/tree/main/samples)
+- github link: https://github.com/YoshimatsuSaito/garmin-sample-streamlit
+""")
+
 # upload .fit file
 uploaded_file = st.file_uploader("upload your .fit file")
 if uploaded_file is not None:
